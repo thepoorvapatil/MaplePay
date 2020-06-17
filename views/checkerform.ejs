@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MaplePay</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:coral;">
+                <a class="navbar-brand" href="#">Cashout Form</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav navbar-right">
+                    <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+                    
+                    <a class="nav-item nav-link " href="/checkerinbox">Inbox</a>
+                    <a class="nav-item nav-link" href="/">Logout</a>
+                    <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+                  </div>
+                </div>
+              </nav>
+  <div class="container">
+  <h4>Payment Request ID: #8362AFD</h4>
+      <form action="/checkerform" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="pymnt">Method of Payment:</label>
+            <input type="text" class="form-control" value="SWIFT" disabled>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="orderof">Order of:</label>
+            <input type="text" class="form-control" id="orderof" value="xyz" disabled>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="issuedw">Order issued with:</label>
+            <input type="text" class="form-control" id="issuedw" value="xxyyzz" disabled>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="callback">Callback Performed:</label>
+            <input type="text" class="form-control" id="callback" value="17/05/2019" disabled>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="pinstruct">Name of person(s) instructing:</label>
+            <input type="text" class="form-control" id="pinstruct" value="Monica Young" disabled>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="callbackwho">Who was called back:</label>
+            <input type="text" class="form-control" id="callbackwho" value="Account Owner" disabled>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="callbackname">Name of person called back:</label>
+            <input type="text" class="form-control" id="callbackname" value="Regina Phalange" disabled>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading"><strong>Client</strong></div>
+                <div class="panel-body">
+                  <label for="debitacc">Debit Account:</label>
+                  <input type="text" class="form-control" id="debitacc" value="006-091-993" disabled>
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading"><strong>Payment</strong></div>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <label for="currency">Currency:</label>
+                            <input type="text" class="form-control" id="currency" value="USD" disabled>
+                          </div>
+                            <div class="col-sm-6">
+                                <label for="currency">Amount:</label>
+                              <input type="text" class="form-control" id="amt" value="10,000" disabled>
+                            </div>
+                        </div>
+                        <label for="dateofdebt">Value date of debt:</label>
+                        <input type="text" class="form-control" id="dateofdebt" value="16/05/2019" disabled>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading"><strong>Beneficiary:</strong> Customer/Bank</div>
+                <div class="panel-body">
+                  <label for="accno">Account No:</label>
+                  <input type="text" class="form-control" id="accno" value="1-6082-018.F" disabled>
+                  <h1></h1>
+                  <h1></h1>
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" value="Phalange Family Trust" disabled>
+                  <h1></h1>
+                  <h1></h1>
+                  <label for="benadd">Address:</label>
+                  <textarea class="form-control rounded-0" id="benadd" rows="2" disabled>Singapore</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <label for="paypurpose">Payment Purpose:</label>
+                  <textarea class="form-control rounded-0" id="paypurpose" rows="3" disabled>Personal expenses</textarea>
+                  <label for="msgOp">Notes by Verifier</label>
+                  <textarea class="form-control rounded-0" id="msgOp" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading"><strong>Bank of the Beneficiary</strong></div>
+                  <div class="panel-body">
+                    <label for="bankcode">Bankcode:</label>
+                    <input type="text" class="form-control" id="bankcode" value="543" disabled>
+                    <label for="benbankname">Name:</label>
+                    <input type="text" class="form-control" id="benbankname" value="Geller Bank" disabled>
+                    <label for="benbankadd">Address:</label>
+                    <textarea class="form-control rounded-0" id="benbankadd" rows="2" disabled>25/F Trade Centre, Singapore</textarea>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          
+        <div class="form-group row">
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Checked and Approved
+                    </label>
+                  </div>
+                </div>
+              </div>
+        <a href="/checkerworkdone" class="btn btn-primary">Submit</a>
+        <a href="/checkersendback" class="btn btn-primary">Return to Maker</a>
+      </form>
+    </div>
+      
+<% include partials/footer %>

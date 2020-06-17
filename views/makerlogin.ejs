@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MaplePay</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:coral;">
+                <a class="navbar-brand" href="/">MaplePay</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+        </nav>
+
+<div class="container">
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-md-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Maker Login</h5>
+        <form action="/makerlogin" method="POST">
+          <input type="text" id="login" name="username" placeholder="username">
+      	  <input type="password" id="password" name="password" placeholder="password">
+          <input class="btn btn-primary" type="submit" value="login" >
+          <!-- <a href="/makerinbox" class="btn btn-primary">Login</a> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <% include partials/footer %>
